@@ -137,8 +137,7 @@ size_element.forEach((siz) => {
 // ----------------------------------------------------
 // // arr
 let somenewArr = [];
-let btn1_add;
-let btn2_close;
+let btn1_add,btn2_close;
 let id = 0;
 
 function newArray() {
@@ -194,20 +193,11 @@ document.querySelector(".add").addEventListener("click", () => {
   document.querySelector(".basket_min_count").innerHTML = somenewArr.length;
  
         //elements count+
-       
-       
-
-
         btn2_close.addEventListener("click", () => {
- 
-
             creat_div.remove()
-            
-           
             somenewArr.forEach((val, index) => {
-               
-                
-                    if(somenewArr.length >0){
+
+                if(somenewArr.length >0){
                     somenewArr.splice(index, 1);
                     
                     }
